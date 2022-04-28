@@ -1,0 +1,281 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: max-content;
+	background-color: aliceblue;
+}
+
+body.modal {
+	overflow: scroll;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+/* ----- Header ----- */
+
+header {
+	background-color: #330b00 ;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 1rem;
+	height: 6rem;
+}
+
+.titulo{
+	color: #e0c590;
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	width: 12rem;
+}
+
+#logo{
+	width: 4rem;
+	height: 60px;
+	border-radius: .7rem;
+	background-size: cover;
+}
+
+/*Barra suspença*/
+
+#conteinerbar{
+	width: 3rem;
+	height: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	cursor:pointer;
+	transition: .5s;
+}
+
+#conteinerbar:hover{
+	width: 3rem;
+	height: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	cursor:pointer;
+	opacity: .8;
+}
+
+#conteinerbar .bar{
+	display: block;
+	background-color: #e0c590;
+	width: 3rem;
+	height: 3px;
+	border-radius: 1rem;
+	transition: transform .5s, opacity .25s;
+}
+
+#conteinerbar.active .bar:nth-child(1){
+	transform: translateY(14px)
+	rotate(45deg);
+}
+
+#conteinerbar.active .bar:nth-child(2){
+	opacity: 0;
+}
+
+#conteinerbar.active .bar:nth-child(3){
+	transform: translateY(-14px)
+	rotate(-45deg);
+}
+
+/* ----- Barra de Pesquisa ----- */
+
+#divBusca{
+	display: flex;
+	justify-content: center;
+	width:100%;
+	margin-top: 1rem;
+}	
+
+#txtBusca{
+	float:left;
+	padding: 1rem;
+	font-style:italic;
+	font-size:18px;
+	border:none;
+	height:32px;
+	width:20rem;
+	background-color:#e0c590;
+	border-radius:1rem 0 0 1rem;
+	transition: .5s;	
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+#lupa{
+	height:32px;
+	width:32px;
+	border-radius:15px;
+	border:none;
+	border-radius: 0 1rem 1rem 0;
+	transition: .5s;
+	cursor: pointer;
+}
+
+.opacityBusca:hover{
+	transition: 1s;
+	opacity: .5;
+}
+
+/* ----- Div de cada elemento ----- */
+
+.conteinername{
+	display: flex;
+	justify-content: space-between;
+	width: 95%;
+	margin: 1.5rem;
+	background-color: #e0c590;
+	border-radius: 1rem;
+}
+
+.conteinernametitle{
+	color: #330b00 ;
+	font-family: arial, sans-serif;
+	padding: .8rem;
+}
+
+.btnmaisop{
+	background-color: #330b00;
+	border: none; 
+	padding: 1.2rem;
+	transition: 1s;
+	color: #e0c590;
+	border-radius: 1rem;
+}
+
+.btnmaisop:hover{
+	background-color: #330b00;
+	color: #e0c590;
+	opacity: .8;
+	box-shadow: .13rem .13rem #e0c590;
+}
+
+.btnmaisop2{
+	text-decoration:none;
+	color: #e0c590;
+	transition: 1s;
+}
+
+.btnmaisop2:hover{
+	text-decoration:none;
+	color: #e0c590;
+	cursor:pointer;
+}
+
+.conteinerimgj{
+	display:flex;
+	justify-content: space-around;
+	margin: 1rem;
+}
+
+.imgj{
+	border:none;
+	height: 10rem;
+	width: 9rem;
+	transition: .4s;
+	margin: 1rem;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, .4);
+}
+
+.imgj:hover{
+	border:none;
+	height: 10rem;
+	width: 9rem;
+	opacity: .8;
+	cursor:pointer;
+	transform: scale(1.1);
+	box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* ----- Modal ----- */
+
+#modal {
+	display: none;
+}
+
+@keyframes fodase {
+	from { opacity: 0; width: 1px; height: 1px;}
+	to { opacity: 1; }
+}
+
+.modal-container {
+	margin-top: 6rem;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	transition: ease-in-out 1s;
+}
+
+#modal.active {
+	display: block;
+}
+
+.modal-content {
+	position: absolute;
+	background-color: #e0c590;
+	animation: fodase .3s;
+	width: 16rem;
+	height: 20rem;
+	right: 0;
+	font-family: Arial;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	list-style: none;
+	opacity: .95;
+}
+
+.modal-content:hover{
+	transition: .25s;
+	opacity: 1;
+}
+
+.modaltext{
+	margin-left: 1rem;
+	margin-block: 2px;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+	color: #330b00;
+}
+
+.modaltext::after{
+	content: '';
+	width: 100%;
+	height: 1px;
+	background-color: #330b00;
+	border-radius: 4px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform .25s ease;
+}
+
+.modaltext:hover::after{
+	transform: scaleX(1);
+}
+
+#opacitymodal:hover{
+	transition: .25s;
+	opacity: .8;
+}
+
+/* ----- Footer ----- */
+footer{
+	background-color: #2b0900;
+	height: 6rem;
+	width: 100%;
+}

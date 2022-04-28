@@ -1,0 +1,177 @@
+﻿<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Zapped</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="index.js" type="text/javascript"></script>
+		<link id="icon" rel="shortcut icon" type="image/x-icon" href="./logo.png">
+	</head>
+	<body>
+		<header id="header">
+			<div></div>
+			<div class="titulo">
+				<img id="logo" src="./imagens/logo.png" alt="logo" />
+				<h1>Zapped</h1>
+			</div>
+			<div type="button" onclick="showModal()" id="conteinerbar">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+		</header>
+		<div id="menu">
+		<div id="divBusca">
+			<input type="text" id="txtBusca" class="opacityBusca" placeholder="Buscar..."/>
+			<img id="lupa" class="opacityBusca" src="./imagens/lupa.png" alt="lupa"/>
+		</div>
+		<div class="conteinername">
+			<div class="conteinernametitle">
+				<h2 id="mjogos">Jogos</h2>
+			</div>	
+			<div>
+				<button class="btnmaisop" >
+					<a class="btnmaisop2" href="">Mais opções</a>
+				</button>
+			</div>
+		</div>
+		<div class="conteinerimgj">
+			<figure>
+					<img class="imgj" src="./imagens/clashroyale.jpg">
+			</figure>
+			<figure>
+					<img class="imgj" src="./imagens/pokemon.jfif">
+			</figure>
+			<figure>
+				<img class="imgj" src="./imagens/birdo.jfif">
+			</figure>
+			<figure>
+				<img class="imgj" src="./imagens/jetpack.jfif">
+			</figure>
+			<figure>
+				<img class="imgj" src="./imagens/freefire.jfif">
+			</figure>
+		</div>
+		<div class="conteinername">
+			<div class="conteinernametitle">
+				<h2 id="mcompras">Compras</h2>
+			</div>	
+			<div>
+				<button class="btnmaisop" >
+					<a class="btnmaisop2" href="">Mais opções</a>
+				</button>
+			</div>
+		</div>
+		<div class="conteinerimgj">
+			<figure>
+				<img class="imgj" src="./imagens/amazon.jfif">
+			</figure>
+			<figure>
+				<img class="imgj" src="./imagens/mercadolivre.png">
+			</figure>
+			<figure>
+				<img class="imgj" src="./imagens/americanas.png">
+			</figure>
+			<figure>
+				<img class="imgj" src="./imagens/shope.png">
+			</figure>
+			<figure>
+				<img class="imgj" src="./imagens/shein.png">
+			</figure>
+		</div>
+		<div class="conteinername">
+			<div class="conteinernametitle">
+				<h2 id="msocial">Social</h2>
+			</div>	
+			<div>
+				<button class="btnmaisop" >
+					<a class="btnmaisop2" href="">Mais opções</a>
+				</button>
+			</div>
+		</div>
+		<div class="conteinerimgj">
+			<figure>
+				<img class="imgj" src="./imagens/whatsap.jfif">
+			</figure>
+			<figure>
+				<img class="imgj" src="./imagens/instagram.jfif">
+			</figure>
+			<figure>
+				<img class="imgj" src="./imagens/twitter.png">
+			</figure>
+			<figure>
+				<img class="imgj" src="./imagens/facebook.png">
+			</figure>
+			<figure>
+				<img class="imgj" src="./imagens/tiktok.jfif">
+			</figure>
+		</div>
+		<div class="conteinername">
+			<div class="conteinernametitle">
+				<h2 id="mmusica">Músicas e áudios</h2>
+			</div>	
+			<div>
+				<button class="btnmaisop" >
+					<a class="btnmaisop2" href="">Mais opções</a>
+				</button>
+			</div>
+		</div>
+		<div class="conteinerimgj">
+			<figure>
+				<img class="imgj" src="./imagens/deezer.jfif">
+			</figure>
+			<figure>
+				<img class="imgj" src="./imagens/spotify.png">
+			</figure>
+			<figure>
+				<img class="imgj" src="./imagens/resso.jfif">
+			</figure>
+			<figure>
+				<img class="imgj" src="./imagens/funcall.jfif">
+			</figure>
+			<figure>
+				<img class="imgj" src="./imagens/MP3Cutter.jfif">
+			</figure>
+		</div>
+		<div class="conteinername">
+			<div class="conteinernametitle">
+				<h2 id="mfinanças">Finanças</h2>
+			</div>	
+			<div>
+				<button class="btnmaisop" >
+					<a class="btnmaisop2" href="">Mais opções</a>
+				</button>
+			</div>
+		</div>
+		<div class="conteinerimgj">
+			<figure>
+				<img class="imgj" src="./imagens/picpay.jfif">
+			</figure>
+			<figure>
+				<img class="imgj" src="./imagens/nubank.png">
+			</figure>
+			<figure>
+				<img class="imgj" src="./imagens/inter.png">
+			</figure>
+			<figure>
+				<img class="imgj" src="./imagens/binance.png">
+			</figure>
+			<figure>
+				<img class="imgj" src="./imagens/next.png">
+			</figure>
+		</div>
+		</div>
+		<div id="modal" class="modal-container">
+			<div class="modal-content">
+				<a href="#header"><h2 id="opacitymodal" class="modaltext">Início</h2></a>
+				<a href="#mjogos"><h2 id="opacitymodal" class="modaltext">Jogos</h2></a>
+				<a href="#mcompras"><h2 id="opacitymodal" class="modaltext">Compras</h2></a>
+				<a href="#msocial"><h2 id="opacitymodal" class="modaltext">Social</h2></a>
+				<a href="#mmusica"><h2 id="opacitymodal" class="modaltext">Músicas e áudios</h2></a>
+				<a href="#mfinaças"><h2 id="opacitymodal" class="modaltext">Finanças</h2></a>
+			</div>
+		</div>
+		<footer>
+			
+		</footer>
+	</body>
+</html>
