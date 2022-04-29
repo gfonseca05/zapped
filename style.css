@@ -29,6 +29,21 @@ header {
 	height: 6rem;
 }
 
+.login-text{
+	letter-spacing: .5rem;
+	font-size: 2rem;
+	text-decoration: none;
+	color: #e0c590;
+	transition: ease-in-out .4s;
+	padding: 1rem;
+}
+
+.login-text:hover{
+	color: #330b00;
+	background-color: #e0c590;
+	border-radius: 10px;
+}
+
 .titulo{
 	color: #e0c590;
 	display: flex;

@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height:100vh;
+    width:100vw;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height:100%;
+    width:100%;
+    background-color: #330b00b6;
+}
+.home_icon{
+    width:100%;
+    height:3rem;
+    margin-top: 1rem;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:aliceblue;
+    justify-content: center;
+}
+.text p{
+    padding:1rem;
+}
+.home_icon i{
+    font-size: 1.4rem;
+    text-align: left;
+    padding: .5rem;
+    margin-bottom: 22rem;
+    margin-left: 1rem;
+    color:aliceblue;
+    transition:ease-in-out .3s;
+}
+.home_icon i:hover{
+    color: #330b0071;
+}
+button{
+    border-radius: .5rem;
+    cursor:pointer;
+}
+.login{
+    border: solid aliceblue;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0);
+    padding: .6rem 2rem;
+    transition:ease-in-out .3s;
+    margin-bottom: 1rem;
+}
+
+.Registro{
+    border:solid #131220;
+    color:#131220;
+    background-color: rgba(0, 0, 0, 0);
+    padding: .6rem 2rem;
+    transition: ease-in-out .3s;
+    margin-bottom: 1rem;
+}
+.login:hover{
+    border:solid #ffffff;
+    background-color: #ffffff;
+    color:#131220;
+    
+}
+.Registro:hover{
+    border:solid #131220;
+    color:aliceblue;
+    background-color: #131220;
+}
+
+ main .cont_geral{
+    width: 90vw;
+    height:90vh;
+    display: flex;
+}
+.left_cont{
+    display: flex;
+    background-color: #e0c590;
+    align-items: center;
+    height: 100%;
+    width:40rem;
+    border-radius: 1rem 1rem 0 0;
+    flex-direction: column;
+}
+.right_cont{
+    display: flex;
+    width:100%;
+    height: 100%;
+    border-radius: 0 0 1rem 1rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aliceblue;
+    row-gap: 1rem;
+}
+.right_cont h1{
+    color:#330b00b6;
+}
+.inputs{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.inputs i {
+    color:#131220;
+    margin-right: .6rem;
+}
+.inputs input{
+    border:none;
+    background-color: #d7efff;
+    outline:none;
+    padding: .8rem 2.2rem;
+    border-radius: .3rem;
+}
+
+h2{
+    margin-top: 1rem;
+}
