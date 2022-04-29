@@ -9,6 +9,7 @@ body {
 	background-color: aliceblue;
 }
 
+
 body.modal {
 	overflow: scroll;
 }
@@ -275,7 +276,7 @@ header {
 
 /* ----- Footer ----- */
 footer{
-	background-color: #2b0900;
+	background-color: #1a0600;
 	height: 6rem;
 	width: 100%;
 }
